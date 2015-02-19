@@ -174,7 +174,7 @@ public class MainActivity extends ActionBarActivity {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                String action = dbManager.createRating(countId, rating);
+                String action = dbManager.createRating(knownList.get(countKnownList-1), rating); /* @TODO: Check if this can be a problem */
                 Log.d("rating", " " + action);
             }
         });

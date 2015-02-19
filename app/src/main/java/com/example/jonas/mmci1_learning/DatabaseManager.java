@@ -48,7 +48,7 @@ public class DatabaseManager {
             return "UPDATE";
         }
         */
-        return "insert or update "+id+" "+rating;
+        return "insert or update "+id+" "+rating+ "getRate() " +getRating(id);
     }
     public String createState(int id, String sorting) {
         database.execSQL("DROP TABLE IF EXISTS "+MySQLiteHelper.TABLE_STATE+";");
