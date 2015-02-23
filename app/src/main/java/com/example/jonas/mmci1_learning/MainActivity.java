@@ -132,7 +132,7 @@ public class MainActivity extends ActionBarActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     knownList = dbManager.getIdsWithRatingASC();
-                    countKnownList = 0;
+                    countKnownList = 0; // resets the counter
                     /*
                     int i = 0;
                     Log.d("knoenList", knownList.get(0)+" "+ knownList.size());
